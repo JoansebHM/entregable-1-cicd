@@ -1,4 +1,4 @@
-name: ???  # 1. Dale un nombre descriptivo a tu workflow
+name: "Workflow practica"  # 1. Dale un nombre descriptivo a tu workflow
 
 on:
   push: # 2. Evento al subir cambios: push
@@ -30,4 +30,4 @@ jobs:
           python-version: 3.13 # 6. Usa una versión mantenida; recomendada: '3.13'.
 
       - name: Ejecutar script Python
-        run: ??? #7. Completa para ejecutar el script de python. Pista: python <nombre_archivo>
+        run: python mi_script.py #7. Completa para ejecutar el script de python. Pista: python <nombre_archivo>
