@@ -162,3 +162,14 @@ En mi caso me parece importante por ejemplo porque en mi trabajo tenemos un serv
 ### Reflexiona sobre el uso de GitHub Actions en tu flujo de trabajo diario. ¿Qué tareas automatizarías? ¿Por qué?
 
 En mi caso los despliegues al servidor on premise para no estarle pidiendo al encargado que lo haga. También que una vez finalizada esta tarea del deploy se le asignen milestones a los pr que se mergearon para saber si ya estan desplegados o no para saber que cambios deberian estar en desarrollo y no estar preguntando si ya subio tal cambio.
+
+---
+
+# Demostración
+
+https://github.com/JoansebHM/entregable-1-cicd/actions/runs/42396457855/job/128474784283
+
+Run python mi_script.py
+Autor: JOAN SEBASTIAN HERRERA MONTES
+Sistema Operativo: Linux 7.0.0-1019-azure
+Fecha y hora desde Python: 2026-11-07 17:28:20.814259
