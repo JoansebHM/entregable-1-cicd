@@ -1,0 +1,33 @@
+name: ???  # 1. Dale un nombre descriptivo a tu workflow
+
+on:
+  push: # 2. Evento al subir cambios: push
+    branches:
+      - main
+  workflow_dispatch: # 2b. Evento de ejecución manual: workflow_dispatch
+
+permissions:
+  contents: read
+
+jobs:
+  imprimir_info:  # No cambies este nombre, lo usaremos para evaluar
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7  # Este paso clona tu repositorio. No lo modifiques.
+
+      - name: Imprimir Mensaje Personalizado
+        shell: bash
+        # 4. Reemplaza [NOMBRES COMPLETOS] con los nombres de todos los integrantes.
+        # 5. ¿Qué comando de shell usarías para obtener la fecha y hora?
+        run: |
+          echo "Hola, soy JOAN SEBASTIAN HERRERA MONTES y este es mi primer workflow!"
+          echo "La fecha y hora actual es: $(date)"
+
+      - name: Configurar Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: 3.13 # 6. Usa una versión mantenida; recomendada: '3.13'.
+
+      - name: Ejecutar script Python
+        run: ??? #7. Completa para ejecutar el script de python. Pista: python <nombre_archivo>
